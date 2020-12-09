@@ -1,0 +1,8 @@
+import numpy as np
+import matplotlib.pyplot as plt
+sales=[243,245,252,255,257,262,266,271,278,279]
+profit=[12,12.5,14,13,14,15,14.5,15,16,15]
+correlation=np.corrcoef(sales,profit)
+scatter= plt.scatter(sales,profit)
+print(correlation)
+plt.show()
